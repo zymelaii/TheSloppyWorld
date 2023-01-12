@@ -32,8 +32,8 @@ set(PROJECT_SOURCES
     src/samples/SingleTriangleSample.cpp
     src/samples/TriangleWithShaderSample.h
     src/samples/TriangleWithShaderSample.cpp
-    src/samples/TriangleWithShaderAndRuntimeAttrib.h
-    src/samples/TriangleWithShaderAndRuntimeAttrib.cpp
+    src/samples/TriangleWithShaderAndRuntimeAttribSample.h
+    src/samples/TriangleWithShaderAndRuntimeAttribSample.cpp
     src/samples/IndexDrawingSample.h
     src/samples/IndexDrawingSample.cpp
     src/samples/ClumsyScene.h

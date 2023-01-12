@@ -5,9 +5,11 @@
 #include <QCommandLineParser>
 #include <QDebug>
 #include <memory>
+#include <iostream>
 
 int main(int argc, char* argv[]) {
-    QApplication	   app(argc, argv);
+    QApplication app(argc, argv);
+
     QCommandLineParser parser;
     parser.addHelpOption();
     parser.setApplicationDescription(R"(
@@ -16,6 +18,10 @@ Modern OpenGL samples gallery (built with Qt 6.4.1) powered by zymelaii.)");
     parser.addOption(
         QCommandLineOption({"t", "target"}, "target sample id", "sampleId", "BetterScene"));
     parser.process(app);
+
+#ifdef __WIN32__
+    FreeConsole();
+#endif
 
     AbstractOpenGLSample* w = OpenGLSampleFactory::getSample(parser.value("target"));
     if (w == nullptr) {

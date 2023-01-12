@@ -50,12 +50,14 @@ qt_add_executable(${PROJECT_NAME}
 target_link_libraries(${PROJECT_NAME}
 PRIVATE
     Qt6::Widgets
-    Qt6::OpenGLWidgets
     Qt6::OpenGL
-    Eigen3::Eigen)
+    Qt6::OpenGLWidgets
+    Eigen3::Eigen
+)
 
 install(TARGETS ${PROJECT_NAME}
     BUNDLE DESTINATION .
-    LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR})
+    LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
+)
 
 qt_finalize_executable(${PROJECT_NAME})

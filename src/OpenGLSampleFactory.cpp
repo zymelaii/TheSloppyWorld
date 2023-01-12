@@ -3,6 +3,7 @@
 #include "samples/SinglePointSample.h"
 #include "samples/SingleTriangleSample.h"
 #include "samples/TriangleWithShaderSample.h"
+#include "samples/TriangleWithShaderAndRuntimeAttribSample.h"
 
 AbstractOpenGLSample* OpenGLSampleFactory::getSample(const QString& sampleName) {
 	AbstractOpenGLSample* sample = nullptr;
@@ -12,6 +13,8 @@ AbstractOpenGLSample* OpenGLSampleFactory::getSample(const QString& sampleName) 
 		sample = new SingleTriangleSample;
 	} else if (sampleName == "TriangleWithShader") {
 		sample = new TriangleWithShaderSample;
+	} else if (sampleName == "TriangleWithShaderAndRuntimeAttrib") {
+		sample = new TriangleWithShaderAndRuntimeAttribSample;
 	}
 	return sample;
 }

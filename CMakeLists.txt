@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
 
-project(TheSloppyWorld VERSION 0.5 LANGUAGES CXX)
+project(TheSloppyWorld VERSION 0.6 LANGUAGES CXX)
 
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTOMOC ON)
@@ -33,6 +33,8 @@ set(PROJECT_SOURCES
     src/samples/TriangleWithShaderAndRuntimeAttrib.cpp
     src/samples/IndexDrawingSample.h
     src/samples/IndexDrawingSample.cpp
+    src/samples/ClumsyScene.h
+    src/samples/ClumsyScene.cpp
 )
 
 qt_add_executable(${PROJECT_NAME}

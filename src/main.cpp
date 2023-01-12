@@ -14,7 +14,7 @@ int main(int argc, char* argv[]) {
 Modern OpenGL samples gallery (built with Qt 6.4.1) powered by zymelaii.)");
 
     parser.addOption(
-        QCommandLineOption({"t", "target"}, "target sample id", "sampleId", "SingleTriangle"));
+        QCommandLineOption({"t", "target"}, "target sample id", "sampleId", "TriangleWithShader"));
     parser.process(app);
 
     AbstractOpenGLSample* w = OpenGLSampleFactory::getSample(parser.value("target"));

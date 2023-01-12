@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
 
-project(TheSloppyWorld VERSION 0.2 LANGUAGES CXX)
+project(TheSloppyWorld VERSION 0.3 LANGUAGES CXX)
 
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTOMOC ON)
@@ -27,6 +27,8 @@ set(PROJECT_SOURCES
     src/samples/SinglePointSample.cpp
     src/samples/SingleTriangleSample.h
     src/samples/SingleTriangleSample.cpp
+    src/samples/TriangleWithShaderSample.h
+    src/samples/TriangleWithShaderSample.cpp
 )
 
 qt_add_executable(${PROJECT_NAME}

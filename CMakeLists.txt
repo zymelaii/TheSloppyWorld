@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
 
-project(TheSloppyWorld VERSION 0.6 LANGUAGES CXX)
+project(TheSloppyWorld VERSION 0.7 LANGUAGES CXX)
 
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTOMOC ON)
@@ -19,6 +19,8 @@ find_package(Qt6 REQUIRED COMPONENTS Widgets OpenGL OpenGLWidgets)
 
 set(PROJECT_SOURCES
     src/main.cpp
+    src/Shader.h
+    src/Shader.cpp
     src/AbstractOpenGLSample.h
     src/AbstractOpenGLSample.cpp
     src/OpenGLSampleFactory.h

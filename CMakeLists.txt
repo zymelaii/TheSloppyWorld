@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
 
-project(TheSloppyWorld VERSION 0.7 LANGUAGES CXX)
+project(TheSloppyWorld VERSION 0.8 LANGUAGES CXX)
 
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTOMOC ON)
@@ -18,6 +18,7 @@ find_package(Qt NAMES Qt6)
 find_package(Qt6 REQUIRED COMPONENTS Widgets OpenGL OpenGLWidgets)
 
 set(PROJECT_SOURCES
+    assets/app.qrc
     src/main.cpp
     src/Shader.h
     src/Shader.cpp
@@ -37,6 +38,8 @@ set(PROJECT_SOURCES
     src/samples/IndexDrawingSample.cpp
     src/samples/ClumsyScene.h
     src/samples/ClumsyScene.cpp
+    src/samples/BetterScene.h
+    src/samples/BetterScene.cpp
 )
 
 qt_add_executable(${PROJECT_NAME}

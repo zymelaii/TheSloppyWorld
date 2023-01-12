@@ -6,6 +6,7 @@
 #include "samples/TriangleWithShaderAndRuntimeAttribSample.h"
 #include "samples/IndexDrawingSample.h"
 #include "samples/ClumsyScene.h"
+#include "samples/BetterScene.h"
 
 AbstractOpenGLSample* OpenGLSampleFactory::getSample(const QString& sampleName) {
     AbstractOpenGLSample* sample = nullptr;
@@ -21,6 +22,8 @@ AbstractOpenGLSample* OpenGLSampleFactory::getSample(const QString& sampleName) 
         sample = new IndexDrawingSample;
     } else if (sampleName == "ClumsyScene") {
         sample = new ClumsyScene;
+    } else if (sampleName == "BetterScene") {
+        sample = new BetterScene;
     }
     return sample;
 }

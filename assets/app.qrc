@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/assets">
+        <file>skybox.jpg</file>
+        <file>world.fs</file>
+        <file>world.vs</file>
+        <file>skybox.fs</file>
+        <file>skybox.vs</file>
+        <file>floor.fs</file>
+        <file>floor.vs</file>
+    </qresource>
+</RCC>
